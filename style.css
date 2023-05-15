@@ -1,0 +1,72 @@
+@media(max-width:1080px){
+#popup{
+    display: grid;
+    grid-template-rows: 1fr 5fr 1.5fr 1fr;
+
+    background-color: gainsboro;
+}
+
+#top_text{
+    text-align: center;
+
+    font-size: 7vw;
+    font-weight: 900;
+
+    margin-bottom: 3vw;
+}
+
+#main_image{
+    width: 50vw;
+    height: 50vw;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main_image_visual{
+    width: 100%;
+    height: 100%;
+
+    border: solid white 5px;
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+#main_text{
+    display: grid;
+    grid-template-columns: 1fr 50vw 1fr;
+
+    text-align: center;
+    
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+}
+
+#main_text_visual{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+#main_button{
+    text-align: center;
+}
+
+#main_button_visual{
+    width: 25%;
+    height: 50%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    text-align: center;
+    background-color: rgb(245,245,245);
+    border: solid gray 3px;
+    border-radius: 5% 5% 5% 5%;
+}
+}
