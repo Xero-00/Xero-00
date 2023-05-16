@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded",
 
         
         let XButton = document.querySelector("#top_X")
-        let bodyContent = document.querySelector("body")
 
         let timerIDInterval = 0
         let timerIDCount = 0
@@ -56,19 +55,17 @@ document.addEventListener("DOMContentLoaded",
                 let nyanCount = 0
 
                 function createDiv(nyanCount) {
-                    const newDiv = document.createElement("div")
-                    Phase2nd.appendChild(newDiv)
-
                     const newImg = document.createElement("img")
                     newImg.setAttribute("src", "images/popupcat.jpeg")
-                    newImg.setAttribute("font-size", "50vw")
+                    newImg.style.fontSize = "10vw"
+                    newImg.style.position = "absolute"
                     let nyanString = nyanCount.toString()
-                    newImg.setAttribute("z-index", nyanString)
+                    newImg.style.zIndex = nyanString
                     let popUpSpaceNum = 0.1 * nyanCount
                     let popUpSpaceString = popUpSpaceNum.toString() + "vw"
-                    newImg.setAttribute("margin-top", popUpSpaceString)
-                    newImg.setAttribute("margin-left", popUpSpaceString)
-                    newDiv.appendChild(newImg)
+                    newImg.style.paddingTop = popUpSpaceString
+                    newImg.style.paddingLeft = popUpSpaceString
+                    Phase2nd.appendChild(newImg)
                 }
 
                 let timerIDIntervalPopUp = 0
@@ -86,10 +83,10 @@ document.addEventListener("DOMContentLoaded",
 
                 function nyanTimer() {
                     Phase1st.style.display = "none"
-                    Phase2nd.style.display = "default"
-                    
-                    timerIDIntervalPopUp = setInterval(nyanPopup, 10)
-                    timerIDTimeoutPopUp = setTimeout(popUpTimer, 4040)
+                    Phase2nd.style.display = "block"
+
+                    timerIDIntervalPopUp = setInterval(nyanPopup, 5)
+                    timerIDTimeoutPopUp = setTimeout(popUpTimer, 2020)
                 }
 
                 normalText()

@@ -1,5 +1,9 @@
 #Phase_1{
-    display: default;
+    display: block;
+}
+
+#Phase_2{
+    display: none;
 }
 
 #popup{
@@ -98,7 +102,4 @@
     cursor: default;
 }
 
-#Phase_2{
-    display: none;
-}
 
