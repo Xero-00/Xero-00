@@ -1,9 +1,19 @@
 @media(max-width:1080px){
+#Phase_1{
+    display: default;
+}
+
 #popup{
     display: grid;
-    grid-template-rows: 1fr 5fr 1.5fr 1fr;
+    grid-template-rows: 1fr 4.5fr 1.5fr 1fr;
 
     background-color: gainsboro;
+    border: solid black 3px;
+}
+
+#top_bar{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
 }
 
 #top_text{
@@ -12,7 +22,24 @@
     font-size: 7vw;
     font-weight: 900;
 
+    margin-top: 1.5vw;
     margin-bottom: 3vw;
+}
+
+#top_X{
+    font-size: 9vw;
+    font-weight: 900;
+
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    padding-bottom: 3vw;
+
+    cursor: pointer;
 }
 
 #main_image{
@@ -68,5 +95,7 @@
     background-color: rgb(245,245,245);
     border: solid gray 3px;
     border-radius: 5% 5% 5% 5%;
+
+    cursor: default;
 }
 }
