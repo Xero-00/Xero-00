@@ -1,4 +1,3 @@
-@media(max-width:1080px){
 #Phase_1{
     display: default;
 }
@@ -98,4 +97,8 @@
 
     cursor: default;
 }
+
+#Phase_2{
+    display: none;
 }
+
